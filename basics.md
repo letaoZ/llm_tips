@@ -4,7 +4,7 @@
 * resume a session: claude -r "my-project" from your terminal.
 * resume through /resume and select interactive menu
 
-## When to useL Skill, Slash Command, Sub-Agent
+## when to use Skill, Slash Command, Sub-Agent
 Skills are specialized instructions you may want to provide to Claude in certain circumstances, but may not always be relevant. 
 Slash commands are specialized commands you may want to invoke manually in certain circumstances. 
 Sub-agents are specialized ppl that you want to offload specific types work to fresh contexts backed by a full agent instance.
@@ -19,3 +19,6 @@ Use skills
 
 Use slash commands 
 * when there are things you specifically know you’ll want to invoke at certain points.
+
+## operational
+* claude --dangerously-skip-permissions. One should only use this in an isolated env
