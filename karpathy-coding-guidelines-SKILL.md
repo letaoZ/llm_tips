@@ -1,7 +1,6 @@
 ---
 name: coding-guidelines
 description: Behavioral guidelines to reduce common LLM coding mistakes. Use when writing, reviewing, or refactoring code to avoid overcomplication, make surgical changes, surface assumptions, and define verifiable success criteria.
-license: MIT
 ---
 
 # Guidelines
@@ -68,12 +67,12 @@ Strong success criteria let you loop independently. Weak criteria ("make it work
 
 <!-- Extended Rules -->
 
-## 5. Use the model only for judgment calls
+## 5. Use the model only for judgment calls [optional]
 Use Claude for: classification, drafting, summarization, extraction from unstructured text.
 Do NOT use Claude for: routing, retries, status-code handling, deterministic transforms.
 If a status code already answers the question, plain code answers the question.
 
-## 6. Token budgets are not advisory
+## 6. Token budgets are not advisory [optional]
 Per-task budget: 4,000 tokens.
 Per-session budget: 30,000 tokens.
 If a task is approaching budget, summarize and start fresh. Do not push through.
