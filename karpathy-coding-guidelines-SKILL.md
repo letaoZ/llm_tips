@@ -72,10 +72,8 @@ Use Claude for: classification, drafting, summarization, extraction from unstruc
 Do NOT use Claude for: routing, retries, status-code handling, deterministic transforms.
 If a status code already answers the question, plain code answers the question.
 
-## 6. Token budgets are not advisory [optional]
-Per-task budget: 4,000 tokens.
-Per-session budget: 30,000 tokens.
-If a task is approaching budget, summarize and start fresh. Do not push through.
+## 6. Token budgets are not advisory
+If a task is approaching usage limit, summarize and start fresh. Do not push through.
 Surfacing the breach > silently overrunning.
 
 ## 7. Surface conflicts, don't average them
